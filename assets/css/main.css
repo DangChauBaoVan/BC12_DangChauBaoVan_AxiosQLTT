@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  position: relative;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+header .backgroundImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -999;
+}
+
+header .navbar {
+  padding: 0;
+  float: left;
+  width: 72%;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  padding: 0 40px 0 0;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  bottom: -18px;
+  left: 18%;
+  pointer-events: none;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #b61984;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link:hover::after {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #b61984;
+}
+
+header .navbar-brand img {
+  width: 80px;
+}
+
+header .ul .li {
+  padding: 0 50px 0 0;
+}
+
+header .groupButton {
+  padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .groupButton a {
+  font-size: 13px;
+  font-weight: 300;
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 0.8em 1.5em;
+  margin: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  background: transparent;
+  border-radius: 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .groupButton a:hover {
+  -webkit-box-shadow: 0 0 0 1px #b61984 inset;
+          box-shadow: 0 0 0 1px #b61984 inset;
+  color: #b61984;
+}
+
+header .groupButton .socialGroupButton i {
+  margin-left: 0.5em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+}
+
+header .groupButton .socialGroupButton i:hover {
+  color: #b61984;
+}
+
+.carousel .carousel__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .carousel__content .carousel__left span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+  letter-spacing: 1px;
+}
+
+.carousel .carousel__content .carousel__left h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #000;
+}
+
+.carousel .carousel__content .carousel__right img {
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel .bottomSectionCoverImage {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -25%;
+  pointer-events: none;
+  margin-bottom: 40px;
+}
+
+.carousel .bottomSectionCoverImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.teacher {
+  margin-top: 5rem;
+  padding-top: 6rem;
+  position: relative;
+  background-color: #dcd1f3;
+}
+
+.teacher .teacher__background {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.teacher .teacher__background img {
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.teacher .teacher__gridContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  z-index: 999;
+}
+
+.teacher .teacher__gridContent .teacher__gridItem {
+  z-index: 9999;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.teacher .teacher__gridContent .teacher__gridItem:hover {
+  -webkit-box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.22);
+}
+
+.teacher .teacher__gridContent .teacher__gridItem .teacher__image {
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.teacher .teacher__gridContent .teacher__gridItem .teacher__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  -webkit-transition: -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+  transition: -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out, -webkit-transform 650ms ease-in-out, -webkit-filter 650ms ease-in-out;
+}
+
+.teacher .teacher__gridContent .teacher__gridItem .teacher__image img:hover {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+          transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.teacher .teacher__gridContent .teacher__gridItem .teacher__info {
+  background-color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.teacher .teacher__gridContent .teacher__gridItem .teacher__info span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #b61984;
+  display: inline-block;
+  margin: 15px 0 10px 0;
+}
+
+.teacher .teacher__gridContent .teacher__gridItem .teacher__info h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.teacher .teacher__gridContent .teacher__gridItem .teacher__info p {
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+.findCourse {
+  padding-top: 4rem;
+  position: relative;
+}
+
+.findCourse .findCourse__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.findCourse .findCourse__contentLeft {
+  z-index: 5;
+}
+
+.findCourse .findCourse__contentLeft img {
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.findCourse .findCourse__contentRight {
+  z-index: 5;
+}
+
+.findCourse .findCourse__contentRight form {
+  background-color: white;
+  -webkit-box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  width: 75%;
+  padding: 0 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.findCourse .findCourse__contentRight form .formContent {
+  padding: 0 5px;
+}
+
+.findCourse .findCourse__contentRight form .formContent h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4.2rem;
+}
+
+.findCourse .findCourse__contentRight form .form-control {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.findCourse .findCourse__contentRight form .form-control:focus {
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.findCourse .findCourse__contentRight form input,
+.findCourse .findCourse__contentRight form select {
+  border-radius: 50px;
+}
+
+.findCourse .findCourse__contentRight form textarea {
+  border-radius: 10px;
+}
+
+.findCourse .findCourse__contentRight form select-items:hover {
+  background-color: none;
+  color: #b61984;
+}
+
+.findCourse .findCourse__contentRight .contactName input {
+  position: relative;
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.findCourse .findCourse__contentRight .contactName i {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 12px;
+  color: #b61984;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.findCourse .findCourse__contentRight .contactEmail input {
+  position: relative;
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.findCourse .findCourse__contentRight .contactEmail i {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 12px;
+  color: #b61984;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.findCourse .findCourse__contentRight .contactLang {
+  position: relative;
+}
+
+.findCourse .findCourse__contentRight .contactLang select {
+  font-size: 13px;
+  padding-left: 25px;
+  font-weight: 400;
+  color: #495057;
+}
+
+.findCourse .findCourse__contentRight .contactLang i {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  z-index: 2;
+  color: #b61984;
+  font-size: 13px;
+}
+
+.findCourse .findCourse__contentRight .contactMessage {
+  position: relative;
+}
+
+.findCourse .findCourse__contentRight .contactMessage textarea {
+  position: relative;
+  padding-left: 25px;
+  font-size: 13px;
+}
+
+.findCourse .findCourse__contentRight .contactMessage i {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  z-index: 2;
+  color: #b61984;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.findCourse .findCourse__contentRight .buttonSend {
+  padding: 0 0 4rem 0;
+}
+
+.findCourse .findCourse__contentRight .buttonSend button {
+  -webkit-box-shadow: 0 0 0 3em #b61984 inset;
+          box-shadow: 0 0 0 3em #b61984 inset;
+  padding: 1em 4em;
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+  background: transparent;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.findCourse .findCourse__contentRight .buttonSend button:hover {
+  -webkit-box-shadow: 0 0 0 1px #b61984 inset;
+          box-shadow: 0 0 0 1px #b61984 inset;
+  color: #b61984;
+}
+
+.findCourse .findCourse__cover {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.findCourse .findCourse__cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+footer {
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 10em 0;
+}
+
+footer .footer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+footer .footer__grid .footer__gridItem {
+  padding: 0 15px;
+}
+
+footer .footer__grid .footer__gridItem h2 {
+  color: #fff;
+}
+
+footer .footer__grid .footer__gridItem ul {
+  list-style: none;
+}
+
+footer .footer__grid .footer__gridItem li {
+  color: #fff;
+}
+
+footer .footer__grid .footer__gridItem li:first-child {
+  margin-top: 1.5em;
+}
+
+footer .footer__grid .footer__gridItem li i {
+  margin-right: 5px;
+}
+
+footer .footer__grid .footer__gridItem a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .footer__grid .footer__gridItem .contactUs {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+footer .footer__grid .footer__gridItem .contactUs .socialGroupButton {
+  margin-top: 2em;
+}
+
+footer .footer__grid .footer__gridItem .contactUs .socialGroupButton i {
+  margin: 0 1em 0 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer__grid .footer__gridItem .contactUs .socialGroupButton i:hover {
+  color: #000;
+}
+
+footer .footer__grid .footer__gridItem .quickLinks li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  padding: .8em 0;
+}
+
+footer .footer__grid .footer__gridItem .quickLinks a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer__grid .footer__gridItem .quickLinks a:hover {
+  opacity: 0.8;
+}
+
+footer .footer__grid .footer__gridItem .about li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  padding: .8em 0;
+}
+
+footer .footer__grid .footer__gridItem .about a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+footer .footer__grid .footer__gridItem .about a:hover {
+  opacity: 0.8;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .inputEmail .form-control:focus {
+  border: 1px solid white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .inputEmail input {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  width: 100%;
+  background: transparent;
+  line-height: 1;
+  display: block;
+  padding: 1em;
+  height: 3em;
+  text-align: center;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .inputEmail input::-webkit-input-placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .inputEmail input:-ms-input-placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .inputEmail input::-ms-input-placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .inputEmail input::placeholder {
+  color: #fff;
+  text-align: center;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .subButton .btn {
+  margin-top: 1em;
+  border-radius: 50px;
+  width: 100%;
+  line-height: 1;
+  display: block;
+  padding: 1em;
+  height: 3em;
+  -webkit-box-shadow: 0 0 0 3em #fff inset;
+          box-shadow: 0 0 0 3em #fff inset;
+  color: #181818;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+footer .footer__grid .footer__gridItem .newsletter .subButton .btn:hover {
+  -webkit-box-shadow: 0 0 0 1px #fff inset;
+          box-shadow: 0 0 0 1px #fff inset;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
